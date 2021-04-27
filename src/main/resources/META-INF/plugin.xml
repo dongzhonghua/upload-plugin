@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>xyz.dsvshx.upload-plugin</id>
+    <name>上传文件到测试机</name>
+    <vendor email="1518943695@qq.com" url="www.dsvshx.xyz">dzh</vendor>
+
+    <description><![CDATA[
+    111111111111111111111111111111111111
+    111111111111111111111111111111111111
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+<!--    <depends>com.intellij.modules.java</depends>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="file-upload" class="UploadFileAction" text="File-Upload" description="上传文件操作">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl meta U"/>
+        </action>
+
+    </actions>
+</idea-plugin>
